@@ -71,7 +71,9 @@ AI-Shopping-Concierge/
 ├── main.py
 └── requirements.txt
 
+---
 
+## 🛠️ Modul & Teknologi
 
 | Modul & Teknologi | Stack / Teknologi | Fungsi |
 | :--- | :--- | :--- |
@@ -81,3 +83,5 @@ AI-Shopping-Concierge/
 | **NLU Engine** | TensorFlow / Keras (CNN 1D) | Klasifikasi niat pencarian kueri |
 | **Database** | Supabase (PostgreSQL + pgvector) | Penyimpanan data relational dan vektor |
 | **Validation Engine** | SymPy | Kalkulasi formula total tagihan transaksi |
+
+
