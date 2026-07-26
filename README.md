@@ -38,6 +38,6 @@ flowchart TD
     subgraph Checkout & Payment Gateway
         O --> P[Multi-Item Cart Session State]
         P --> Q[SymPy Financial Calculator]
-        Q --> R[Payment Settlement: QRIS / VA / E-Wallet]
+        Q --> R[Payment Settlement: QRIS/VA/E-Wallet]
         R --> S[Transaction Log & Analytics]
     end
