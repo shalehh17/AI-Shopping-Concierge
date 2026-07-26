@@ -19,7 +19,7 @@ Multi-Payment Gateway Simulation: Mendukung pembayaran via QRIS Dinamis, Virtual
 
 
 
-##  📁 Struktur Direktori Proyek
+📁 Struktur Direktori Proyek
 AI-Shopping-Concierge/
 ├── data/
 │   ├── embeddings/
@@ -31,7 +31,7 @@ AI-Shopping-Concierge/
 ├── docs/
 │   ├── arsititektur_gambar/
 │   │   └── Arsitektur_CNN1D_AI_Concierge.png
-│   
+│   └── PPT Case Study ML.pdf
 ├── notebooks/
 │   ├── 01_eda_and_preprocessing.ipynb
 │   ├── 02_cnn_model_training_ipynb.ipynb
