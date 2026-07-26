@@ -70,3 +70,6 @@ AI-Shopping-Concierge/
 ├── logo.png
 ├── main.py
 └── requirements.txt
+
+
+https://gemini.google.com/app/d2e394f4b83d1d26#:~:text=%F0%9F%9B%A0%EF%B8%8F%20Modul%20%26%20Teknologi,total%20tagihan%20transaksi
