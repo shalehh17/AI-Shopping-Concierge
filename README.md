@@ -73,7 +73,6 @@ AI-Shopping-Concierge/
 
 
 
-'''''''''''''''''''''''''''''''''''''''''''''''''
 | Modul & Teknologi | Stack / Teknologi | Fungsi |
 | :--- | :--- | :--- |
 | **Frontend UI** | Streamlit | Antarmuka obrolan dan panel checkout |
