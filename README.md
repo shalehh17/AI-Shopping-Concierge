@@ -8,31 +8,27 @@ Aplikasi *Conversational Commerce* berbasis **Retrieval-Augmented Generation (RA
 
 Diagram di bawah ini menjelaskan alur kerja sistem dari saat pengguna memasukkan kueri hingga proses transaksi selesai:
 
-## 📐 Arsitektur Sistem
-
-Diagram di bawah ini menggambarkan alur kerja sistem dari *User Input* hingga *Payment Gateway*:
-
 ```mermaid
 flowchart TD
     A[User Input / Query] --> B{Entry Point}
     B -->|Streamlit UI| C[app.py]
-    B -->|REST API| D[main.py/FastAPI]
+    B -->|REST API| D[main.py / FastAPI]
 
     C --> E[AIConciergePipeline]
     D --> E
 
     subgraph NLU & Retrieval Engine
-        E --> F[Intent Classifier/CNN 1D]
+        E --> F[Intent Classifier / CNN 1D]
         F --> G[Query Parser & Text Processing]
-        G --> H[Semantic Search/Vector DB]
-        H -->|Fetch Embeddings| I[Supabase]
+        G --> H[Semantic Search / Vector DB]
+        H -->|Fetch Embeddings| I[product_vectors.pkl / Supabase]
     end
 
     I -->|Retrieved Ground Truth| J[Grounded Context Payload]
 
     subgraph LLM Generation & Parsing
         J --> K[Gemini LLM Client]
-        K -->|Google GenAI API v1beta| L[Gemini 2.0 Flash]
+        K -->|Google GenAI API v1beta| L[Gemini 2.0 Flash / Lite]
         L -->|JSON Structured Output| M[JSON Parser]
     end
 
@@ -45,24 +41,5 @@ flowchart TD
         Q --> R[Payment Settlement: QRIS / VA / E-Wallet]
         R --> S[Transaction Log & Analytics]
     end
----
-
-
-
-
-
-AI Shopping Concierge
-🌟 Fitur Utama Platform
-Semantic Product Search: Menerjemahkan kueri bebas pelanggan menjadi pencarian produk berbasis vektor.
-
-NLU Intent Classification (CNN 1D): Mengklasifikasikan niat pencarian kueri secara otomatis dengan pemantauan performa real-time.
-
-Deterministic JSON Output: Menjamin respons LLM bebas halusinasi dengan membatasi rekomendasi murni pada data ground truth.
-
-Interactive Multi-Item Cart: Menampung banyak produk sekaligus, menghitung subtotal per item, dan memperbarui tampilan keranjang secara real-time.
-
-SymPy Validated Checkout: Melakukan validasi matematis untuk kalkulasi harga barang, kuantitas, dan ongkos kirim.
-
-Multi-Payment Gateway Simulation: Mendukung pembayaran via QRIS Dinamis, Virtual Account, dan E-Wallet.
 
 
