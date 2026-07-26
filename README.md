@@ -8,7 +8,6 @@ Aplikasi *Conversational Commerce* berbasis **Retrieval-Augmented Generation (RA
 
 Diagram di bawah ini menjelaskan alur kerja sistem dari saat pengguna memasukkan kueri hingga proses transaksi selesai:
 
-```mermaid
 flowchart TD
     A[User Input / Query] --> B{Entry Point}
     B -->|Streamlit UI| C[app.py]
@@ -18,22 +17,18 @@ flowchart TD
     D --> E
 
     subgraph NLU & Retrieval Engine
-        E --> F[Intent Classifier
-              /CNN 1D]
+        E --> F["Intent Classifier / CNN 1D"]
         F --> G[Query Parser & Text Processing]
-        G --> H[Semantic Search
-              /Vector DB]
-        H -->|Fetch Embeddings|
-       I[product_vectors.pkl/Supabase]
+        G --> H["Semantic Search / Vector DB"]
+        H --> I["product_vectors.pkl / Supabase"]
     end
 
     I -->|Retrieved Ground Truth| J[Grounded Context Payload]
 
     subgraph LLM Generation & Parsing
         J --> K[Gemini LLM Client]
-        K -->|Google GenAI API v1beta|
-        L[Gemini 2.0 Flash / Lite]
-        L -->|JSON Structured Output| M[JSON Parser]
+        K --> L["Gemini 2.0 Flash / Lite"]
+        L --> M[JSON Structured Output Parser]
     end
 
     M --> N[Product Recommendation Cards]
@@ -42,7 +37,6 @@ flowchart TD
     subgraph Checkout & Payment Gateway
         O --> P[Multi-Item Cart Session State]
         P --> Q[SymPy Financial Calculator]
-        Q --> R[Payment Settlement: QRIS
-                 /VA/E-Wallet]
+        Q --> R["Payment Settlement: QRIS / VA / E-Wallet"]
         R --> S[Transaction Log & Analytics]
     end
