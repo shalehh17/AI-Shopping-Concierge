@@ -12,23 +12,23 @@ Diagram di bawah ini menjelaskan alur kerja sistem dari saat pengguna memasukkan
 flowchart TD
     A[User Input / Query] --> B{Entry Point}
     B -->|Streamlit UI| C[app.py]
-    B -->|REST API| D[main.py / FastAPI]
+    B -->|REST API| D[main.py/FastAPI]
 
     C --> E[AIConciergePipeline]
     D --> E
 
     subgraph NLU & Retrieval Engine
-        E --> F[Intent Classifier / CNN 1D]
-        F --> G[Query Parser & Text Processing]
-        G --> H[Semantic Search / Vector DB]
-        H -->|Fetch Embeddings| I[product_vectors.pkl / Supabase]
+        E --> F[Intent Classifier/CNN 1D]
+        F --> G[Query Parser&Text Processing]
+        G --> H[Semantic Search/Vector DB]
+        H -->|Fetch Embeddings| I[Supabase]
     end
 
     I -->|Retrieved Ground Truth| J[Grounded Context Payload]
 
     subgraph LLM Generation & Parsing
         J --> K[Gemini LLM Client]
-        K -->|Google GenAI API v1beta| L[Gemini 2.0 Flash / Lite]
+        K -->|Google GenAI API v1beta| L[Gemini 2.0 Flash]
         L -->|JSON Structured Output| M[JSON Parser]
     end
 
