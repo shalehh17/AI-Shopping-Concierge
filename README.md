@@ -4,6 +4,7 @@ Aplikasi *Conversational Commerce* berbasis **Retrieval-Augmented Generation (RA
 
 ---
 
+<img width="1429" height="8192" alt="image" src="https://github.com/user-attachments/assets/18f3c6c6-4332-40ac-9a59-87bf29e46e29" />
 
 
 ## 🌟 Fitur Utama Platform
