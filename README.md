@@ -71,44 +71,5 @@ AI-Shopping-Concierge/
 ├── main.py
 └── requirements.txt
 
-<table border="1" style="border-collapse: collapse; width: 100%;">
-  <thead>
-    <tr style="background-color: #f6f8fa;">
-      <th style="padding: 10px; text-align: left;">Modul & Teknologi</th>
-      <th style="padding: 10px; text-align: left;">Stack / Teknologi</th>
-      <th style="padding: 10px; text-align: left;">Fungsi</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="padding: 8px;"><strong>Frontend UI</strong></td>
-      <td style="padding: 8px;">Streamlit</td>
-      <td style="padding: 8px;">Antarmuka obrolan dan panel checkout</td>
-    </tr>
-    <tr>
-      <td style="padding: 8px;"><strong>Backend API</strong></td>
-      <td style="padding: 8px;">FastAPI / Uvicorn</td>
-      <td style="padding: 8px;">Endpoint REST API untuk integrasi sistem eksternal</td>
-    </tr>
-    <tr>
-      <td style="padding: 8px;"><strong>Generative AI</strong></td>
-      <td style="padding: 8px;">Google GenAI SDK (<code>gemini-2.0-flash-lite</code>)</td>
-      <td style="padding: 8px;">Inferensi rekomendasi terstruktur</td>
-    </tr>
-    <tr>
-      <td style="padding: 8px;"><strong>NLU Engine</strong></td>
-      <td style="padding: 8px;">TensorFlow / Keras (CNN 1D)</td>
-      <td style="padding: 8px;">Klasifikasi niat pencarian kueri</td>
-    </tr>
-    <tr>
-      <td style="padding: 8px;"><strong>Database</strong></td>
-      <td style="padding: 8px;">Supabase (PostgreSQL + pgvector)</td>
-      <td style="padding: 8px;">Penyimpanan data relational dan vektor</td>
-    </tr>
-    <tr>
-      <td style="padding: 8px;"><strong>Validation Engine</strong></td>
-      <td style="padding: 8px;">SymPy</td>
-      <td style="padding: 8px;">Kalkulasi formula total tagihan transaksi</td>
-    </tr>
-  </tbody>
-</table>
+🛠️ Modul & TeknologiModul & TeknologiStack / TeknologiFungsiFrontend UIStreamlitAntarmuka obrolan dan panel checkoutBackend APIFastAPI / UvicornEndpoint REST API untuk integrasi sistem eksternalGenerative AIGoogle GenAI SDK (gemini-2.0-flash-lite)Inferensi rekomendasi terstrukturNLU EngineTensorFlow / Keras (CNN 1D)Klasifikasi niat pencarian kueriDatabaseSupabase (PostgreSQL + pgvector)Penyimpanan data relational dan vektor
+
