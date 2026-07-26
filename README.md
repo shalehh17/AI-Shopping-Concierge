@@ -41,3 +41,66 @@ flowchart TD
         Q --> R[Payment Settlement: QRIS / VA / E-Wallet]
         R --> S[Transaction Log & Analytics]
     end
+
+
+🌟 Fitur Utama Platform
+1.Semantic Product Search: Menerjemahkan kueri bebas pelanggan menjadi pencarian produk berbasis vektor.
+2.NLU Intent Classification (CNN 1D): Mengklasifikasikan niat pencarian kueri secara otomatis dengan pemantauan performa real-time.
+3.Deterministic JSON Output: Menjamin respons LLM bebas halusinasi dengan membatasi rekomendasi murni pada data ground truth.
+4.Interactive Multi-Item Cart: Menampung banyak produk sekaligus, menghitung subtotal per item, dan memperbarui tampilan keranjang secara real-time.
+5.SymPy Validated Checkout: Melakukan validasi matematis untuk kalkulasi harga barang, kuantitas, dan ongkos kirim.
+6.Multi-Payment Gateway Simulation: Mendukung pembayaran via QRIS Dinamis, Virtual Account, dan E-Wallet.
+
+
+📁 Struktur Direktori Proyek
+Plaintext
+AI-Shopping-Concierge/
+├── data/
+│   ├── embeddings/
+│   │   └── product_vectors.pkl
+│   ├── processed/
+│   │   └── cleaned_dataset.csv
+│   └── raw/
+│       └── Dataset_ecommerce_500.csv
+├── docs/
+│   ├── arsititektur_gambar/
+│   │   └── Arsitektur_CNN1D_AI_Concierge.png
+│   └── PPT Case Study ML.pdf
+├── notebooks/
+│   ├── 01_eda_and_preprocessing.ipynb
+│   ├── 02_cnn_model_training_ipynb.ipynb
+│   └── 03_vector_embeddings.ipynb
+├── scripts/
+│   └── AI_Shopping_Concierge_New.ipynb
+├── src/
+│   ├── database/
+│   │   ├── __init__.py
+│   │   ├── relational_queries.py
+│   │   ├── supabase_client.py
+│   │   └── vector_db_client.py
+│   ├── models/
+│   │   ├── __init__.py
+│   │   ├── intent_classification_model.keras
+│   │   ├── intent_classifier.py
+│   │   └── semantic_search.py
+│   ├── services/
+│   │   ├── __init__.py
+│   │   ├── concierge_pipeline.py
+│   │   └── llm_integration.py
+│   ├── tools/
+│   │   ├── __init__.py
+│   │   ├── query_parser.py
+│   │   └── scientific_calculator.py
+│   ├── utils/
+│   │   ├── __init__.py
+│   │   └── text_processing.py
+│   ├── __init__.py
+│   ├── config.py
+│   └── main.py
+├── .gitignore
+├── Procfile
+├── README.md
+├── app.py
+├── logo.png
+├── main.py
+└── requirements.txt
