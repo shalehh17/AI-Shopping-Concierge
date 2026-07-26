@@ -18,8 +18,8 @@ flowchart TD
     D --> E
 
     subgraph NLU & Retrieval Engine
-        E --> F[Intent Classifier/CNN 1D]
-        F --> G[Query Parser & Text Processing]
+        E --> F[IntentClassifier/CNN 1D]
+        F --> G[QueryParser&Text Processing]
         G --> H[Semantic Search/Vector DB]
         H -->|Fetch Embeddings| I[Supabase]
     end
@@ -38,8 +38,37 @@ flowchart TD
     subgraph Checkout & Payment Gateway
         O --> P[Multi-Item Cart Session State]
         P --> Q[SymPy Financial Calculator]
-        Q --> R[Payment Settlement: QRIS / VA / E-Wallet]
+        Q --> R[Payment Settlement]
         R --> S[Transaction Log & Analytics]
     end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+AI Shopping Concierge
+🌟 Fitur Utama Platform
+Semantic Product Search: Menerjemahkan kueri bebas pelanggan menjadi pencarian produk berbasis vektor.
+
+NLU Intent Classification (CNN 1D): Mengklasifikasikan niat pencarian kueri secara otomatis dengan pemantauan performa real-time.
+
+Deterministic JSON Output: Menjamin respons LLM bebas halusinasi dengan membatasi rekomendasi murni pada data ground truth.
+
+Interactive Multi-Item Cart: Menampung banyak produk sekaligus, menghitung subtotal per item, dan memperbarui tampilan keranjang secara real-time.
+
+SymPy Validated Checkout: Melakukan validasi matematis untuk kalkulasi harga barang, kuantitas, dan ongkos kirim.
+
+Multi-Payment Gateway Simulation: Mendukung pembayaran via QRIS Dinamis, Virtual Account, dan E-Wallet.
 
 
