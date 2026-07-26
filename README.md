@@ -41,9 +41,5 @@ flowchart TD
         Q --> R[Payment Settlement: QRIS / VA / E-Wallet]
         R --> S[Transaction Log & Analytics]
     end
-
-
-
-        Q --> R[Payment Settlement: QRIS / VA / E-Wallet]
         R --> S[Transaction Log & Analytics]
     end
