@@ -19,8 +19,7 @@ Multi-Payment Gateway Simulation: Mendukung pembayaran via QRIS Dinamis, Virtual
 
 
 
-📁 Struktur Direktori Proyek
-Plaintext
+##  📁 Struktur Direktori Proyek
 AI-Shopping-Concierge/
 ├── data/
 │   ├── embeddings/
