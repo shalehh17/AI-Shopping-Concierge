@@ -8,6 +8,10 @@ Aplikasi *Conversational Commerce* berbasis **Retrieval-Augmented Generation (RA
 
 Diagram di bawah ini menjelaskan alur kerja sistem dari saat pengguna memasukkan kueri hingga proses transaksi selesai:
 
+## 📐 Arsitektur Sistem
+
+Diagram di bawah ini menggambarkan alur kerja sistem dari *User Input* hingga *Payment Gateway*:
+
 ```mermaid
 flowchart TD
     A[User Input / Query] --> B{Entry Point}
@@ -18,8 +22,8 @@ flowchart TD
     D --> E
 
     subgraph NLU & Retrieval Engine
-        E --> F[IntentClassifier/CNN 1D]
-        F --> G[QueryParser&Text Processing]
+        E --> F[Intent Classifier/CNN 1D]
+        F --> G[Query Parser & Text Processing]
         G --> H[Semantic Search/Vector DB]
         H -->|Fetch Embeddings| I[Supabase]
     end
@@ -38,20 +42,10 @@ flowchart TD
     subgraph Checkout & Payment Gateway
         O --> P[Multi-Item Cart Session State]
         P --> Q[SymPy Financial Calculator]
-        Q --> R[Payment Settlement]
+        Q --> R[Payment Settlement: QRIS / VA / E-Wallet]
         R --> S[Transaction Log & Analytics]
     end
-
-
-
-
-
-
-
-
-
-
-
+---
 
 
 
