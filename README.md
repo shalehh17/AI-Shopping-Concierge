@@ -43,17 +43,22 @@ flowchart TD
     end
 
 
-🌟 Fitur Utama Platform
-1.Semantic Product Search: Menerjemahkan kueri bebas pelanggan menjadi pencarian produk berbasis vektor.
-2.NLU Intent Classification (CNN 1D): Mengklasifikasikan niat pencarian kueri secara otomatis dengan pemantauan performa real-time.
-3.Deterministic JSON Output: Menjamin respons LLM bebas halusinasi dengan membatasi rekomendasi murni pada data ground truth.
-4.Interactive Multi-Item Cart: Menampung banyak produk sekaligus, menghitung subtotal per item, dan memperbarui tampilan keranjang secara real-time.
-5.SymPy Validated Checkout: Melakukan validasi matematis untuk kalkulasi harga barang, kuantitas, dan ongkos kirim.
-6.Multi-Payment Gateway Simulation: Mendukung pembayaran via QRIS Dinamis, Virtual Account, dan E-Wallet.
+# AI Shopping Concierge
 
+## 🌟 Fitur Utama Platform
 
-📁 Struktur Direktori Proyek
-Plaintext
+1. **Semantic Product Search**: Menerjemahkan kueri bebas pelanggan menjadi pencarian produk berbasis vektor.
+2. **NLU Intent Classification (CNN 1D)**: Mengklasifikasikan niat pencarian kueri secara otomatis dengan pemantauan performa *real-time*.
+3. **Deterministic JSON Output**: Menjamin respons LLM bebas halusinasi dengan membatasi rekomendasi murni pada data *ground truth*.
+4. **Interactive Multi-Item Cart**: Menampung banyak produk sekaligus, menghitung subtotal per item, dan memperbarui tampilan keranjang secara *real-time*.
+5. **SymPy Validated Checkout**: Melakukan validasi matematis untuk kalkulasi harga barang, kuantitas, dan ongkos kirim.
+6. **Multi-Payment Gateway Simulation**: Mendukung pembayaran via QRIS Dinamis, Virtual Account, dan E-Wallet.
+
+---
+
+## 📁 Struktur Direktori Proyek
+
+```text
 AI-Shopping-Concierge/
 ├── data/
 │   ├── embeddings/
