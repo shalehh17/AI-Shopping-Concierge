@@ -4,45 +4,7 @@ Aplikasi *Conversational Commerce* berbasis **Retrieval-Augmented Generation (RA
 
 ---
 
-## 🔄 Diagram Alir System & Architecture Flow
 
-Diagram di bawah ini menjelaskan alur kerja sistem dari saat pengguna memasukkan kueri hingga proses transaksi selesai:
-
-```mermaid
-flowchart TD
-    A[User Input / Query] --> B{Entry Point}
-    B -->|Streamlit UI| C[app.py]
-    B -->|REST API| D[main.py / FastAPI]
-
-    C --> E[AIConciergePipeline]
-    D --> E
-
-    subgraph NLU & Retrieval Engine
-        E --> F[Intent Classifier/CNN 1D]
-        F --> G[Query Parser & Text Processing]
-        G --> H[Semantic Search/Vector DB]
-        H -->|Fetch Embeddings| I[product_vectors.pkl / Supabase]
-    end
-
-    I -->|Retrieved Ground Truth| J[Grounded Context Payload]
-
-    subgraph LLM Generation & Parsing
-        J --> K[Gemini LLM Client]
-        K -->|Google GenAI API v1beta| L[Gemini 2.0 Flash / Lite]
-        L -->|JSON Structured Output| M[JSON Parser]
-    end
-
-    M --> N[Product Recommendation Cards]
-    N --> O[Add to Cart Action]
-
-    subgraph Checkout & Payment Gateway
-        O --> P[Multi-Item Cart Session State]
-        P --> Q[SymPy Financial Calculator]
-        Q --> R[Payment Settlement]
-        R --> S[Transaction Log & Analytics]
-    end
-
----
 
 ## 🌟 Fitur Utama Platform
 Semantic Product Search: Menerjemahkan kueri bebas pelanggan menjadi pencarian produk berbasis vektor.
