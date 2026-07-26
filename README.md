@@ -71,5 +71,11 @@ AI-Shopping-Concierge/
 ├── main.py
 └── requirements.txt
 
-
-https://gemini.google.com/app/d2e394f4b83d1d26#:~:text=%F0%9F%9B%A0%EF%B8%8F%20Modul%20%26%20Teknologi,total%20tagihan%20transaksi
+| Modul & Teknologi | Stack / Teknologi | Fungsi |
+| :--- | :--- | :--- |
+| **Frontend UI** | Streamlit | Antarmuka obrolan dan panel checkout |
+| **Backend API** | FastAPI / Uvicorn | Endpoint REST API untuk integrasi sistem eksternal |
+| **Generative AI** | Google GenAI SDK (`gemini-2.0-flash-lite`) | Inferensi rekomendasi terstruktur |
+| **NLU Engine** | TensorFlow / Keras (CNN 1D) | Klasifikasi niat pencarian kueri |
+| **Database** | Supabase (PostgreSQL + pgvector) | Penyimpanan data relational dan vektor |
+| **Validation Engine** | SymPy | Kalkulasi formula total tagihan transaksi |
