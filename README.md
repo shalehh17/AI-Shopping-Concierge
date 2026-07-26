@@ -71,5 +71,14 @@ AI-Shopping-Concierge/
 ├── main.py
 └── requirements.txt
 
-🛠️ Modul & TeknologiModul & TeknologiStack / TeknologiFungsiFrontend UIStreamlitAntarmuka obrolan dan panel checkoutBackend APIFastAPI / UvicornEndpoint REST API untuk integrasi sistem eksternalGenerative AIGoogle GenAI SDK (gemini-2.0-flash-lite)Inferensi rekomendasi terstrukturNLU EngineTensorFlow / Keras (CNN 1D)Klasifikasi niat pencarian kueriDatabaseSupabase (PostgreSQL + pgvector)Penyimpanan data relational dan vektor
 
+
+'''''''''''''''''''''''''''''''''''''''''''''''''
+| Modul & Teknologi | Stack / Teknologi | Fungsi |
+| :--- | :--- | :--- |
+| **Frontend UI** | Streamlit | Antarmuka obrolan dan panel checkout |
+| **Backend API** | FastAPI / Uvicorn | Endpoint REST API untuk integrasi sistem eksternal |
+| **Generative AI** | Google GenAI SDK (`gemini-2.0-flash-lite`) | Inferensi rekomendasi terstruktur |
+| **NLU Engine** | TensorFlow / Keras (CNN 1D) | Klasifikasi niat pencarian kueri |
+| **Database** | Supabase (PostgreSQL + pgvector) | Penyimpanan data relational dan vektor |
+| **Validation Engine** | SymPy | Kalkulasi formula total tagihan transaksi |
